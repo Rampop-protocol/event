@@ -3,4 +3,13 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
-# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+
+
+[rpc_endpoints]
+filecoin_mainnet = "https://api.node.glif.io/rpc/v1"
+filecoin_calibration = "https://api.calibration.node.glif.io/rpc/v1"
+
+[etherscan]
+filecoin_mainnet = { key = "${FILSCAN_API_KEY}", url = "https://api.filfox.info/api/v1" }
+filecoin_calibration = { key = "${CALIBRATION_API_KEY}", url = "https://api.calibration.filfox.info/api/v1" }
